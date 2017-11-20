@@ -5,6 +5,31 @@ import (
 	"testing"
 )
 
+func TestBappend(t *testing.T) {
+	b := []string{"1"}
+	got := Bappend(b, "2")
+	expected := []string{"1", "2"}
+	if !reflect.DeepEqual(got, expected) {
+		t.Errorf("expected=%#v, got=%#v", expected, got)
+	}
+}
+
+func TestBcap(t *testing.T) {
+	a := []string{"1"}
+	got := Bcap(a)
+	expected := cap(a)
+	if got != expected {
+		t.Errorf("Bcap(slice) should return capacity of slice. expected=%d, got=%d", expected, got)
+	}
+
+	b := [2]string{"1"}
+	got = Bcap(b)
+	expected = 2
+	if got != expected {
+		t.Errorf("Bcap(array) should return capacity of array. expected=%d, got=%d", expected, got)
+	}
+}
+
 func TestBcomplex(t *testing.T) {
 	if complex(1, 2) != Bcomplex(1, 2) {
 		t.Errorf("Bcomplex behavior should be equal to complex")
