@@ -10,7 +10,7 @@ PowerAssert library for golang.
 |-------|--------|
 |gopwt/assert|[82.8%](https://gocover.io/github.com/toqoz/gopwt/assert)|
 |gopwt/translatedassert|[64.9%](https://gocover.io/github.com/toqoz/gopwt/translatedassert)|
-|gopwt/translator/internal|[60.5%](https://gocover.io/github.com/toqoz/gopwt/translator/internal)|
+|gopwt/translator/internal|[62.2%](https://gocover.io/github.com/toqoz/gopwt/translator/internal)|
 
 ![logo](http://toqoz.net/art/images/gopwt.svg)
 
@@ -89,9 +89,9 @@ $ go test
 		
 FAIL
 exit status 1
-FAIL	github.com/gopwter/gopwtexample	0.006s
+FAIL	github.com/gopwter/gopwtexample	0.007s
 exit status 1
-FAIL	github.com/gopwter/gopwtexample	0.866s
+FAIL	github.com/gopwter/gopwtexample	0.803s
 ```
 
 ## Example
@@ -372,8 +372,8 @@ $ go test
 		+++ [map[string]string] map[string]string{}
 		@@ -1,4 +1,1@@
 		-{
-		-  "a":            "a",
 		-  "b--------key": "b------value",
+		-  "a":            "a",
 		-}
 		+map[string]string{}
 		
@@ -548,9 +548,9 @@ $ go test
 		
 FAIL
 exit status 1
-FAIL	github.com/ToQoz/gopwt/_example	0.008s
+FAIL	github.com/ToQoz/gopwt/_example	0.007s
 exit status 1
-FAIL	github.com/ToQoz/gopwt/_example	0.745s
+FAIL	github.com/ToQoz/gopwt/_example	0.699s
 ```
 
 ## Tips
